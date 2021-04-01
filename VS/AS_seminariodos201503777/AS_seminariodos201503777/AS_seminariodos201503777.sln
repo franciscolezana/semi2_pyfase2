@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "AS_seminariodos201503777", "AS_seminariodos201503777\AS_seminariodos201503777.dwproj", "{388AD6C8-DBB3-4D3A-B059-3C4EE832672E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{388AD6C8-DBB3-4D3A-B059-3C4EE832672E}.Development|Default.ActiveCfg = Development
+		{388AD6C8-DBB3-4D3A-B059-3C4EE832672E}.Development|Default.Build.0 = Development
+		{388AD6C8-DBB3-4D3A-B059-3C4EE832672E}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {150EE3E1-3249-49D4-AD68-2076C2C7D186}
+	EndGlobalSection
+EndGlobal

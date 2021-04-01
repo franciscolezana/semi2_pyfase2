@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "RS_seminariodos201503777", "RS_seminariodos201503777\RS_seminariodos201503777.rptproj", "{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.Debug|Default.ActiveCfg = Debug
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.Debug|Default.Build.0 = Debug
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.Debug|Default.Deploy.0 = Debug
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.DebugLocal|Default.Build.0 = DebugLocal
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.Release|Default.ActiveCfg = Release
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.Release|Default.Build.0 = Release
+		{83A9EA68-A88E-4A81-AFF3-595757B6D4BE}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CA2DBE8-B76D-4052-BE3D-19BEAF256B05}
+	EndGlobalSection
+EndGlobal
