@@ -86,7 +86,9 @@ CREATE TABLE Hecho_Venta(
 	primary key (CodigoCliente, CodigoProducto, CodigoSucursal, CodigoVendedor, CodigoRegion)
 );
 
-insert into Dim_Tiempo(order_date,Anio,NombreMes,Mes,Semestre,Dia) select distict C.Fecha,
+
+
+insert into Dim_Tiempo(order_date,Anio,NombreMes,Mes,Semestre,Dia) select distinct C.Fecha,
 	year(C.Fecha) as Anio,
 	NombreMes=
 		CASE 
@@ -106,14 +108,16 @@ insert into Dim_Tiempo(order_date,Anio,NombreMes,Mes,Semestre,Dia) select distic
 		MONTH(C.Fecha) as Mes,
 		Semestre=
 			CASE 
-				WHEN MONTH(C.Fecha) then '1'
+				WHEN MONTH(C.Fecha)<7 then '1'
 				ELSE '2'
 				END,
 		DAY(C.Fecha) as Dia
-		from (SELECT Fecha FROM Hecho_Compra UNION SELECT Fecha FROM Hecho_Venta) as C:
+		from (SELECT Fecha FROM Hecho_Compra UNION SELECT Fecha FROM Hecho_Venta) as C;
 
 
-
+use seminariodos201503777;
+UPDATE Hecho_Compra SET CostoU =(CostoU/100);
+UPDATE Hecho_Venta SET PrecioUnitario =(PrecioUnitario/100);
 
 
 
@@ -149,10 +153,10 @@ select COUNT(*)  AS "TemporalCompras" from TemporalCompras;
 select COUNT(*) AS "TemporalVentas" from TemporalVentas;
 
 use seminariodos201503777;
-select COUNT(*) AS "Proveedores" from Dim_Proveedor;
-select COUNT(*) AS "Productos" from Dim_Producto;
-select COUNT(*) AS "Sucursal" from Dim_Sucursal;
-select COUNT(*) AS "Region" from Dim_Region;
+select COUNT(*) AS "Proveedores" from Dim_Proveedor;   330 -1
+select COUNT(*) AS "Productos" from Dim_Producto;  69 
+select COUNT(*) AS "Sucursal" from Dim_Sucursal;  120   -1 
+select COUNT(*) AS "Region" from Dim_Region;  22
 select COUNT(*) AS "Tiempo" from Dim_Tiempo;
 select COUNT(*) AS "Clientes" from Dim_Cliente;
 select COUNT(*) AS "Vendedores" from Dim_Vendedor;
